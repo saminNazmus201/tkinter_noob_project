@@ -3,7 +3,7 @@ from tkinter import *
 root = Tk()
 root.geometry("285x290")
 root.title("simple calculator using gui")
-show = ""
+
 
 
 def click(num):
