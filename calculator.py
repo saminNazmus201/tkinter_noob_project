@@ -7,32 +7,31 @@ show = ""
 
 
 def click(num):
-    global show
-    show = show + str(num)
+    
     field.insert(END, str(num))
 
 
 def result():
     try:
-        global show
+       
         show=field.get("1.0","end-1c")
         total = str(eval(show))
         field.delete("1.0", END)
         field.insert(END, total)
 
-        show = ""
+        
 
     except:
         field.delete("1.0", END)
         field.insert(END, "error")
-        show = ""
+        
 
 
 def clear():
-    global show
+   
 
     field.delete("1.0", END)
-    show = ""
+    
 
 
 def backslash():
